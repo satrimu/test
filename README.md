@@ -73,7 +73,6 @@ print(f"API calls remaining: {rate_limit['resources']['core']['remaining']}")
 ## Dokumentasi API
 Untuk informasi lebih lanjut tentang GitHub API, kunjungi:
 - [GitHub REST API Documentation](https://docs.github.com/en/rest)
-- [GitHub API v3](https://developer.github.com/v3/)
 
 ## Lisensi
 Open source untuk keperluan testing dan pembelajaran

@@ -31,8 +31,9 @@ def example_with_token():
     print("Example 2: With Authentication Token")
     print("-" * 50)
     
-    # Replace with your actual token
-    token = "your_github_token_here"
+    # Use environment variable or config file for token
+    import os
+    token = os.environ.get("GITHUB_TOKEN", "your_github_token_here")
     tester = GitHubAPITester(token=token)
     
     try:

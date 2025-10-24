@@ -6,7 +6,7 @@ Demonstrates basic GitHub API operations using the requests library
 
 import requests
 import json
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 
 
 class GitHubAPITester:
@@ -59,7 +59,7 @@ class GitHubAPITester:
         response.raise_for_status()
         return response.json()
     
-    def list_repositories(self, username: str) -> list:
+    def list_repositories(self, username: str) -> List[Dict[str, Any]]:
         """
         List repositories for a user
         
